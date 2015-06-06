@@ -1,4 +1,4 @@
-# Google APIs Client Wrapper For PHP
+# Google APIs Client Wrapper For PHP (unlimited requests for google service)
 Google APIs Client Wrapper for PHP with multi keys (for free using)
 
 This extension has been developed to overcome the maximum number of requests to Google API services free of charge.
