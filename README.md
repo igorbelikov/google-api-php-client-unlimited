@@ -32,6 +32,12 @@ try {
 }
 ```
 
+# Install:
+Composer:
+`composer require 'igorbelikov/google-api-php-client-multi:dev-master'`
+OR
+`"igorbelikov/google-api-php-client-multi": "dev-master"`
+
 # RU
 Это расширение было разработано для преодоления максимального количества запросов в сервисах Google API на бесплатной основе.
 
