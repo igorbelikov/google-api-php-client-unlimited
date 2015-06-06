@@ -21,5 +21,10 @@
     },
     "require-dev": {
         "phpunit/phpunit": "4.7.*"
-    }
+    },
+    "autoload": {
+        "files": [
+            "src/Google_Client_Multi.php"
+        ]
+    },
 }
