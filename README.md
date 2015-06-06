@@ -21,7 +21,7 @@ $keys = array(
 	// ...
 );
 
-// In total countl all tokens eq 300 requst/day! Ha-Ha!
+// In total count all tokens eq 300 requst/day! Ha-Ha!
 
 $client = new Google_Client_Multi();
 $client->setKeys($keys)->prepareMulti();
