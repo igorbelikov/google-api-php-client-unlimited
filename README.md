@@ -10,13 +10,18 @@ And this method can be applied to any API, provided to reduce constraints.
 
 Example:
 ```php
+
+// Custom Search Engine Example
+
 // https://console.developers.google.com/project
 $keys = array(
-	'YOUR_DEVELOPER_KEY_1', // app-1
-	'YOUR_DEVELOPER_KEY_2', // app-2
-	'YOUR_DEVELOPER_KEY_3', // app-3
+	'YOUR_DEVELOPER_KEY_1', // app-1, for one project available 100 free request
+	'YOUR_DEVELOPER_KEY_2', // app-2 + 100 request
+	'YOUR_DEVELOPER_KEY_3', // app-3 + 100 request
 	// ...
 );
+
+// In total countl all tokens eq 300 requst/day! Ha-Ha!
 
 $client = new Google_Client_Multi();
 $client->setKeys($keys)->prepareMulti();
