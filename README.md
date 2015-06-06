@@ -32,12 +32,28 @@ try {
 }
 ```
 
-# Install:
+# Install/Autoload
 Composer:
-`composer require 'igorbelikov/google-api-php-client-multi:dev-master'`
-OR
-`"igorbelikov/google-api-php-client-multi": "dev-master"`
 
+This version of `google-api-php-client-multi` using [Composer](http://getcomposer.org).
+The first step to use `google-api-php-client-multi` is to download composer:
+
+```bash
+$ curl -s http://getcomposer.org/installer | php
+```
+
+Now we can use autoloader from Composer by:
+```
+php composer.phar require 'igorbelikov/google-api-php-client-multi:dev-master'`
+```
+or
+```json
+{
+    "require": {
+		"igorbelikov/google-api-php-client-multi": "dev-master"
+    }
+}
+```
 # RU
 Это расширение было разработано для преодоления максимального количества запросов в сервисах Google API на бесплатной основе.
 
