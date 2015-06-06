@@ -1,0 +1,25 @@
+{
+	"name": "igorbelikov/google-api-php-client-multi",
+	"description": "Google APIs Client Wrapper for PHP with multi keys (for free using)",
+    "keywords": ["google api", "free"],
+    "homepage": "http://ibelik.com",
+    "support": {
+    	"email": "ihor.belikov@gmail.com",
+        "issues": "https://github.com/igorbelikov/google-api-php-client-multi/issues?state=open",
+        "source": "https://github.com/igorbelikov/google-api-php-client-multi"
+    },
+    "authors": [
+        {
+            "name": "Igor Belikov",
+            "email": "ihor.belikov@gmail.com",
+            "homepage": "http://ibelik.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+    	"php": ">=5.2.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.7.*"
+    }
+}
