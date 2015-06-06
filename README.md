@@ -49,7 +49,7 @@ $ curl -s http://getcomposer.org/installer | php
 
 Now we can use autoloader from Composer by:
 ```
-php composer.phar require 'igorbelikov/google-api-php-client-multi:dev-master'`
+php composer.phar require 'igorbelikov/google-api-php-client-multi:dev-master'
 ```
 or
 ```json
