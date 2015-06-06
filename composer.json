@@ -24,7 +24,7 @@
     },
     "autoload": {
         "files": [
-            "src/Google_Client_Multi.php"
+            "Google_Client_Multi.php"
         ]
     },
 }
