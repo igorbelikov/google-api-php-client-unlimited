@@ -14,7 +14,7 @@ Example:
 // Custom Search Engine Example
 
 // https://console.developers.google.com/project
-// In total count all tokens eq 300 requests/day! Ha-Ha!
+// In total count all tokens eq 300 FREE requests/day! Ha-Ha!
 $keys = array(
 	'YOUR_DEVELOPER_KEY_1', // app-1, for one project available 100 free requests
 	'YOUR_DEVELOPER_KEY_2', // app-2 + 100 requests
