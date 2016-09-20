@@ -1,4 +1,7 @@
 <?php
+
+use Psr\Http\Message\RequestInterface;
+
 /**
  * @author Igor Belikov <ihor.belikov@gmail.com>
  */
@@ -64,6 +67,7 @@ class Google_Client_Multi extends Google_Client
 	/**
 	 * Set next "Developer Key" from config
 	 * @return string
+	 * @throws Google_Client_Multi_Exception
 	 */
 	private function setNextDeveloperKey()
 	{
@@ -92,11 +96,16 @@ class Google_Client_Multi extends Google_Client
 
 	/**
 	 * @override
+	 * @param RequestInterface $request
+	 * @param null $expectedClass
+	 * @return object
+	 * @throws Google_Client_Multi_Exception
+	 * @throws Google_Service_Exception
 	 */
-	public function execute($request)
+	public function execute(RequestInterface $request, $expectedClass = null)
 	{
 		try {
-			$result = parent::execute($request);
+			$result = parent::execute($request, $expectedClass);
 		} catch(Google_Service_Exception $e) {
 			$errors = $e->getErrors();
 			if($e->getCode() == 403 && isset($errors[0]['reason']) && $errors[0]['reason'] == 'dailyLimitExceeded') {
