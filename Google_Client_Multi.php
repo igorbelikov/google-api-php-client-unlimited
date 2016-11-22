@@ -7,6 +7,11 @@ use Psr\Http\Message\RequestInterface;
  */
 class Google_Client_Multi_Exception extends Exception {}
 
+class Google_Service_Multi extends Google_Service
+{
+
+}
+
 /**
  * Google Client Wrapper for using multi project keys
  * @author Igor Belikov <ihor.belikov@gmail.com>
@@ -102,7 +107,7 @@ class Google_Client_Multi extends Google_Client
 	 * @throws Google_Client_Multi_Exception
 	 * @throws Google_Service_Exception
 	 */
-	public function execute(RequestInterface $request, $expectedClass = null)
+	public function execute($request, $expectedClass = null)
 	{
 		try {
 			$result = parent::execute($request, $expectedClass);

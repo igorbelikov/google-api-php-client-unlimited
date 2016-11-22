@@ -1,3 +1,4 @@
 vendor
 composer.lock
 phpunit.phar
+example-local.php
